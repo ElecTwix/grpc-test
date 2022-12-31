@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/electwix/grpc-server/electwix";
+option csharp_namespace = "GrpcGreeterClient";
+package electwix;
+
+
+service StreamService {
+  rpc FetchResponse (Request) returns (stream Response) {}
+}
+
+message Request {
+  int32 id = 1;
+}
+
+message Response {
+  string result = 1;
+}

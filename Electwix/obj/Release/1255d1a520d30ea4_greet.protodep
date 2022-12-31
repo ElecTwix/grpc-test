@@ -1,0 +1,2 @@
+obj/Release/Protos/Greet.cs \
+obj/Release/Protos/GreetGrpc.cs: Protos/greet.proto
